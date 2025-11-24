@@ -1,0 +1,29 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX wod: <https://paris-saclay.fr/courses/wod/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX ps: <http://www.wikidata.org/prop/statement/>
+PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+
+# replace CONSTRUCT with INSERT to insert the triples in the graph 
+
+CONSTRUCT {
+?country owl:sameAs ?countryWDT ;
+        wod:population ?population
+} where {
+    ?country a wod:Country ;
+            rdfs:label ?countryName ;
+
+    service <https://query.wikidata.org/sparql> {
+        ?countryWDT wdt:P31 wd:Q6256 ;
+           wdt:P1082 ?population ;
+           rdfs:label ?countryLabel .
+        FILTER(LANG(?countryLabel) = "en")
+    }
+
+    FILTER (STR(?countryName) = STR(?countryLabel))
+} 

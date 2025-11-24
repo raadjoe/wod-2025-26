@@ -1,0 +1,16 @@
+PREFIX wod: <https://paris-saclay.fr/courses/wod/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select ?countryName ?nbMedals ?population ?roundedRatio where {
+    ?country a wod:Country ;
+            rdfs:label ?countryName ;
+            wod:numberMedals ?nbMedals ;
+            wod:population ?population
+    
+    BIND (?population/?nbMedals AS ?ratio)
+    BIND (ROUND(?ratio) AS ?roundedRatio)
+    FILTER(?population > 500000) # countries with min 500K habitants
+    
+} ORDER BY ?ratio
+LIMIT 10
