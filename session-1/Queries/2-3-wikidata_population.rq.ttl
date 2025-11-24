@@ -1,0 +1,43 @@
+# Query 2: List the current population of all countries in Wikidata
+
+#defaultView:BubbleChart
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX ps: <http://www.wikidata.org/prop/statement/>
+PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+
+SELECT ?countryLabel ?population WHERE {
+  ?country wdt:P31 wd:Q6256 ;             # P31: instance_of, Q6256: country
+           wdt:P1082 ?population . # P1082: population
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+} ORDER BY DESC(?population)
+
+# --------
+
+# Query 3: List the population of all countries in Wikidata in 2016
+
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX ps: <http://www.wikidata.org/prop/statement/>
+PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+
+SELECT ?countryLabel ?population WHERE {
+  ?country wdt:P31 wd:Q6256 ;             # P31: instance_of, Q6256: country
+           p:P1082 ?populationStatement . # P1082: population
+ 
+  ?populationStatement ps:P1082 ?population ; # P1082: population
+                       pq:P585 ?date .       # P585: point_in_time
+  
+  FILTER(YEAR(?date) = 2016)
+ 
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+} ORDER BY DESC(?population)
