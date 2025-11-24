@@ -1,0 +1,743 @@
+@base <http://example.com/base/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wod: <https://paris-saclay.fr/courses/wod/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+wod:USA a wod:Country;
+  rdfs:label "United States"@en;
+  wod:longName "United States of America"@en;
+  wod:numberGoldMedals "40"^^xsd:int;
+  wod:numberSilverMedals "44"^^xsd:int;
+  wod:numberBronzeMedals "42"^^xsd:int;
+  wod:numberMedals "126"^^xsd:int .
+
+wod:CHN a wod:Country;
+  rdfs:label "China"@en;
+  wod:longName "People's Republic of China"@en;
+  wod:numberGoldMedals "40"^^xsd:int;
+  wod:numberSilverMedals "27"^^xsd:int;
+  wod:numberBronzeMedals "24"^^xsd:int;
+  wod:numberMedals "91"^^xsd:int .
+
+wod:JPN a wod:Country;
+  rdfs:label "Japan"@en;
+  wod:longName "Japan"@en;
+  wod:numberGoldMedals "20"^^xsd:int;
+  wod:numberSilverMedals "12"^^xsd:int;
+  wod:numberBronzeMedals "13"^^xsd:int;
+  wod:numberMedals "45"^^xsd:int .
+
+wod:AUS a wod:Country;
+  rdfs:label "Australia"@en;
+  wod:longName "Australia"@en;
+  wod:numberGoldMedals "18"^^xsd:int;
+  wod:numberSilverMedals "19"^^xsd:int;
+  wod:numberBronzeMedals "16"^^xsd:int;
+  wod:numberMedals "53"^^xsd:int .
+
+wod:FRA a wod:Country;
+  rdfs:label "France"@en;
+  wod:longName "France"@en;
+  wod:numberGoldMedals "16"^^xsd:int;
+  wod:numberSilverMedals "26"^^xsd:int;
+  wod:numberBronzeMedals "22"^^xsd:int;
+  wod:numberMedals "64"^^xsd:int .
+
+wod:NED a wod:Country;
+  rdfs:label "Netherlands"@en;
+  wod:longName "Netherlands"@en;
+  wod:numberGoldMedals "15"^^xsd:int;
+  wod:numberSilverMedals "7"^^xsd:int;
+  wod:numberBronzeMedals "12"^^xsd:int;
+  wod:numberMedals "34"^^xsd:int .
+
+wod:GBR a wod:Country;
+  rdfs:label "Great Britain"@en;
+  wod:longName "Great Britain"@en;
+  wod:numberGoldMedals "14"^^xsd:int;
+  wod:numberSilverMedals "22"^^xsd:int;
+  wod:numberBronzeMedals "29"^^xsd:int;
+  wod:numberMedals "65"^^xsd:int .
+
+wod:KOR a wod:Country;
+  rdfs:label "Korea"@en;
+  wod:longName "Republic of Korea"@en;
+  wod:numberGoldMedals "13"^^xsd:int;
+  wod:numberSilverMedals "9"^^xsd:int;
+  wod:numberBronzeMedals "10"^^xsd:int;
+  wod:numberMedals "32"^^xsd:int .
+
+wod:ITA a wod:Country;
+  rdfs:label "Italy"@en;
+  wod:longName "Italy"@en;
+  wod:numberGoldMedals "12"^^xsd:int;
+  wod:numberSilverMedals "13"^^xsd:int;
+  wod:numberBronzeMedals "15"^^xsd:int;
+  wod:numberMedals "40"^^xsd:int .
+
+wod:GER a wod:Country;
+  rdfs:label "Germany"@en;
+  wod:longName "Germany"@en;
+  wod:numberGoldMedals "12"^^xsd:int;
+  wod:numberSilverMedals "13"^^xsd:int;
+  wod:numberBronzeMedals "8"^^xsd:int;
+  wod:numberMedals "33"^^xsd:int .
+
+wod:NZL a wod:Country;
+  rdfs:label "New Zealand"@en;
+  wod:longName "New Zealand"@en;
+  wod:numberGoldMedals "10"^^xsd:int;
+  wod:numberSilverMedals "7"^^xsd:int;
+  wod:numberBronzeMedals "3"^^xsd:int;
+  wod:numberMedals "20"^^xsd:int .
+
+wod:CAN a wod:Country;
+  rdfs:label "Canada"@en;
+  wod:longName "Canada"@en;
+  wod:numberGoldMedals "9"^^xsd:int;
+  wod:numberSilverMedals "7"^^xsd:int;
+  wod:numberBronzeMedals "11"^^xsd:int;
+  wod:numberMedals "27"^^xsd:int .
+
+wod:UZB a wod:Country;
+  rdfs:label "Uzbekistan"@en;
+  wod:longName "Uzbekistan"@en;
+  wod:numberGoldMedals "8"^^xsd:int;
+  wod:numberSilverMedals "2"^^xsd:int;
+  wod:numberBronzeMedals "3"^^xsd:int;
+  wod:numberMedals "13"^^xsd:int .
+
+wod:HUN a wod:Country;
+  rdfs:label "Hungary"@en;
+  wod:longName "Hungary"@en;
+  wod:numberGoldMedals "6"^^xsd:int;
+  wod:numberSilverMedals "7"^^xsd:int;
+  wod:numberBronzeMedals "6"^^xsd:int;
+  wod:numberMedals "19"^^xsd:int .
+
+wod:ESP a wod:Country;
+  rdfs:label "Spain"@en;
+  wod:longName "Spain"@en;
+  wod:numberGoldMedals "5"^^xsd:int;
+  wod:numberSilverMedals "4"^^xsd:int;
+  wod:numberBronzeMedals "9"^^xsd:int;
+  wod:numberMedals "18"^^xsd:int .
+
+wod:SWE a wod:Country;
+  rdfs:label "Sweden"@en;
+  wod:longName "Sweden"@en;
+  wod:numberGoldMedals "4"^^xsd:int;
+  wod:numberSilverMedals "4"^^xsd:int;
+  wod:numberBronzeMedals "3"^^xsd:int;
+  wod:numberMedals "11"^^xsd:int .
+
+wod:KEN a wod:Country;
+  rdfs:label "Kenya"@en;
+  wod:longName "Kenya"@en;
+  wod:numberGoldMedals "4"^^xsd:int;
+  wod:numberSilverMedals "2"^^xsd:int;
+  wod:numberBronzeMedals "5"^^xsd:int;
+  wod:numberMedals "11"^^xsd:int .
+
+wod:NOR a wod:Country;
+  rdfs:label "Norway"@en;
+  wod:longName "Norway"@en;
+  wod:numberGoldMedals "4"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "3"^^xsd:int;
+  wod:numberMedals "8"^^xsd:int .
+
+wod:IRL a wod:Country;
+  rdfs:label "Ireland"@en;
+  wod:longName "Ireland"@en;
+  wod:numberGoldMedals "4"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "3"^^xsd:int;
+  wod:numberMedals "7"^^xsd:int .
+
+wod:BRA a wod:Country;
+  rdfs:label "Brazil"@en;
+  wod:longName "Brazil"@en;
+  wod:numberGoldMedals "3"^^xsd:int;
+  wod:numberSilverMedals "7"^^xsd:int;
+  wod:numberBronzeMedals "10"^^xsd:int;
+  wod:numberMedals "20"^^xsd:int .
+
+wod:IRI a wod:Country;
+  rdfs:label "IR Iran"@en;
+  wod:longName "Islamic Republic of Iran"@en;
+  wod:numberGoldMedals "3"^^xsd:int;
+  wod:numberSilverMedals "6"^^xsd:int;
+  wod:numberBronzeMedals "3"^^xsd:int;
+  wod:numberMedals "12"^^xsd:int .
+
+wod:UKR a wod:Country;
+  rdfs:label "Ukraine"@en;
+  wod:longName "Ukraine"@en;
+  wod:numberGoldMedals "3"^^xsd:int;
+  wod:numberSilverMedals "5"^^xsd:int;
+  wod:numberBronzeMedals "4"^^xsd:int;
+  wod:numberMedals "12"^^xsd:int .
+
+wod:ROU a wod:Country;
+  rdfs:label "Romania"@en;
+  wod:longName "Romania"@en;
+  wod:numberGoldMedals "3"^^xsd:int;
+  wod:numberSilverMedals "4"^^xsd:int;
+  wod:numberBronzeMedals "2"^^xsd:int;
+  wod:numberMedals "9"^^xsd:int .
+
+wod:GEO a wod:Country;
+  rdfs:label "Georgia"@en;
+  wod:longName "Georgia"@en;
+  wod:numberGoldMedals "3"^^xsd:int;
+  wod:numberSilverMedals "3"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "7"^^xsd:int .
+
+wod:BEL a wod:Country;
+  rdfs:label "Belgium"@en;
+  wod:longName "Belgium"@en;
+  wod:numberGoldMedals "3"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "6"^^xsd:int;
+  wod:numberMedals "10"^^xsd:int .
+
+wod:BUL a wod:Country;
+  rdfs:label "Bulgaria"@en;
+  wod:longName "Bulgaria"@en;
+  wod:numberGoldMedals "3"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "3"^^xsd:int;
+  wod:numberMedals "7"^^xsd:int .
+
+wod:SRB a wod:Country;
+  rdfs:label "Serbia"@en;
+  wod:longName "Serbia"@en;
+  wod:numberGoldMedals "3"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "5"^^xsd:int .
+
+wod:CZE a wod:Country;
+  rdfs:label "Czechia"@en;
+  wod:longName "Czechia"@en;
+  wod:numberGoldMedals "3"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "2"^^xsd:int;
+  wod:numberMedals "5"^^xsd:int .
+
+wod:DEN a wod:Country;
+  rdfs:label "Denmark"@en;
+  wod:longName "Denmark"@en;
+  wod:numberGoldMedals "2"^^xsd:int;
+  wod:numberSilverMedals "2"^^xsd:int;
+  wod:numberBronzeMedals "5"^^xsd:int;
+  wod:numberMedals "9"^^xsd:int .
+
+wod:AZE a wod:Country;
+  rdfs:label "Azerbaijan"@en;
+  wod:longName "Azerbaijan"@en;
+  wod:numberGoldMedals "2"^^xsd:int;
+  wod:numberSilverMedals "2"^^xsd:int;
+  wod:numberBronzeMedals "3"^^xsd:int;
+  wod:numberMedals "7"^^xsd:int .
+
+wod:CRO a wod:Country;
+  rdfs:label "Croatia"@en;
+  wod:longName "Croatia"@en;
+  wod:numberGoldMedals "2"^^xsd:int;
+  wod:numberSilverMedals "2"^^xsd:int;
+  wod:numberBronzeMedals "3"^^xsd:int;
+  wod:numberMedals "7"^^xsd:int .
+
+wod:CUB a wod:Country;
+  rdfs:label "Cuba"@en;
+  wod:longName "Cuba"@en;
+  wod:numberGoldMedals "2"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "6"^^xsd:int;
+  wod:numberMedals "9"^^xsd:int .
+
+wod:BRN a wod:Country;
+  rdfs:label "Bahrain"@en;
+  wod:longName "Bahrain"@en;
+  wod:numberGoldMedals "2"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "4"^^xsd:int .
+
+wod:SLO a wod:Country;
+  rdfs:label "Slovenia"@en;
+  wod:longName "Slovenia"@en;
+  wod:numberGoldMedals "2"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "0"^^xsd:int;
+  wod:numberMedals "3"^^xsd:int .
+
+wod:TPE a wod:Country;
+  rdfs:label "Chinese Taipei"@en;
+  wod:longName "Chinese Taipei"@en;
+  wod:numberGoldMedals "2"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "5"^^xsd:int;
+  wod:numberMedals "7"^^xsd:int .
+
+wod:AUT a wod:Country;
+  rdfs:label "Austria"@en;
+  wod:longName "Austria"@en;
+  wod:numberGoldMedals "2"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "3"^^xsd:int;
+  wod:numberMedals "5"^^xsd:int .
+
+wod:HKG a wod:Country;
+  rdfs:label "Hong Kong, China"@en;
+  wod:longName "Hong Kong, China"@en;
+  wod:numberGoldMedals "2"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "2"^^xsd:int;
+  wod:numberMedals "4"^^xsd:int .
+
+wod:PHI a wod:Country;
+  rdfs:label "Philippines"@en;
+  wod:longName "Philippines"@en;
+  wod:numberGoldMedals "2"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "2"^^xsd:int;
+  wod:numberMedals "4"^^xsd:int .
+
+wod:ALG a wod:Country;
+  rdfs:label "Algeria"@en;
+  wod:longName "Algeria"@en;
+  wod:numberGoldMedals "2"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "3"^^xsd:int .
+
+wod:INA a wod:Country;
+  rdfs:label "Indonesia"@en;
+  wod:longName "Indonesia"@en;
+  wod:numberGoldMedals "2"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "0"^^xsd:int;
+  wod:numberMedals "2"^^xsd:int .
+
+wod:ISR a wod:Country;
+  rdfs:label "Israel"@en;
+  wod:longName "Israel"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "5"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "7"^^xsd:int .
+
+wod:POL a wod:Country;
+  rdfs:label "Poland"@en;
+  wod:longName "Poland"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "4"^^xsd:int;
+  wod:numberBronzeMedals "5"^^xsd:int;
+  wod:numberMedals "10"^^xsd:int .
+
+wod:KAZ a wod:Country;
+  rdfs:label "Kazakhstan"@en;
+  wod:longName "Kazakhstan"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "3"^^xsd:int;
+  wod:numberBronzeMedals "3"^^xsd:int;
+  wod:numberMedals "7"^^xsd:int .
+
+wod:JAM a wod:Country;
+  rdfs:label "Jamaica"@en;
+  wod:longName "Jamaica"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "3"^^xsd:int;
+  wod:numberBronzeMedals "2"^^xsd:int;
+  wod:numberMedals "6"^^xsd:int .
+
+wod:RSA a wod:Country;
+  rdfs:label "South Africa"@en;
+  wod:longName "South Africa"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "3"^^xsd:int;
+  wod:numberBronzeMedals "2"^^xsd:int;
+  wod:numberMedals "6"^^xsd:int .
+
+wod:THA a wod:Country;
+  rdfs:label "Thailand"@en;
+  wod:longName "Thailand"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "3"^^xsd:int;
+  wod:numberBronzeMedals "2"^^xsd:int;
+  wod:numberMedals "6"^^xsd:int .
+
+wod:AIN a wod:Country;
+  rdfs:label "AIN"@en;
+  wod:longName "AIN"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "3"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "5"^^xsd:int .
+
+wod:ETH a wod:Country;
+  rdfs:label "Ethiopia"@en;
+  wod:longName "Ethiopia"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "3"^^xsd:int;
+  wod:numberBronzeMedals "0"^^xsd:int;
+  wod:numberMedals "4"^^xsd:int .
+
+wod:SUI a wod:Country;
+  rdfs:label "Switzerland"@en;
+  wod:longName "Switzerland"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "2"^^xsd:int;
+  wod:numberBronzeMedals "5"^^xsd:int;
+  wod:numberMedals "8"^^xsd:int .
+
+wod:ECU a wod:Country;
+  rdfs:label "Ecuador"@en;
+  wod:longName "Ecuador"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "2"^^xsd:int;
+  wod:numberBronzeMedals "2"^^xsd:int;
+  wod:numberMedals "5"^^xsd:int .
+
+wod:POR a wod:Country;
+  rdfs:label "Portugal"@en;
+  wod:longName "Portugal"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "2"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "4"^^xsd:int .
+
+wod:GRE a wod:Country;
+  rdfs:label "Greece"@en;
+  wod:longName "Greece"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "6"^^xsd:int;
+  wod:numberMedals "8"^^xsd:int .
+
+wod:ARG a wod:Country;
+  rdfs:label "Argentina"@en;
+  wod:longName "Argentina"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "3"^^xsd:int .
+
+wod:EGY a wod:Country;
+  rdfs:label "Egypt"@en;
+  wod:longName "Egypt"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "3"^^xsd:int .
+
+wod:TUN a wod:Country;
+  rdfs:label "Tunisia"@en;
+  wod:longName "Tunisia"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "3"^^xsd:int .
+
+wod:BOT a wod:Country;
+  rdfs:label "Botswana"@en;
+  wod:longName "Botswana"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "0"^^xsd:int;
+  wod:numberMedals "2"^^xsd:int .
+
+wod:CHI a wod:Country;
+  rdfs:label "Chile"@en;
+  wod:longName "Chile"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "0"^^xsd:int;
+  wod:numberMedals "2"^^xsd:int .
+
+wod:LCA a wod:Country;
+  rdfs:label "Saint Lucia"@en;
+  wod:longName "Saint Lucia"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "0"^^xsd:int;
+  wod:numberMedals "2"^^xsd:int .
+
+wod:UGA a wod:Country;
+  rdfs:label "Uganda"@en;
+  wod:longName "Uganda"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "0"^^xsd:int;
+  wod:numberMedals "2"^^xsd:int .
+
+wod:DOM a wod:Country;
+  rdfs:label "Dominican Republic"@en;
+  wod:longName "Dominican Republic"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "2"^^xsd:int;
+  wod:numberMedals "3"^^xsd:int .
+
+wod:GUA a wod:Country;
+  rdfs:label "Guatemala"@en;
+  wod:longName "Guatemala"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "2"^^xsd:int .
+
+wod:MAR a wod:Country;
+  rdfs:label "Morocco"@en;
+  wod:longName "Morocco"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "2"^^xsd:int .
+
+wod:DMA a wod:Country;
+  rdfs:label "Dominica"@en;
+  wod:longName "Dominica"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "0"^^xsd:int;
+  wod:numberMedals "1"^^xsd:int .
+
+wod:PAK a wod:Country;
+  rdfs:label "Pakistan"@en;
+  wod:longName "Pakistan"@en;
+  wod:numberGoldMedals "1"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "0"^^xsd:int;
+  wod:numberMedals "1"^^xsd:int .
+
+wod:TUR a wod:Country;
+  rdfs:label "Türkiye"@en;
+  wod:longName "Türkiye"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "3"^^xsd:int;
+  wod:numberBronzeMedals "5"^^xsd:int;
+  wod:numberMedals "8"^^xsd:int .
+
+wod:MEX a wod:Country;
+  rdfs:label "Mexico"@en;
+  wod:longName "Mexico"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "3"^^xsd:int;
+  wod:numberBronzeMedals "2"^^xsd:int;
+  wod:numberMedals "5"^^xsd:int .
+
+wod:ARM a wod:Country;
+  rdfs:label "Armenia"@en;
+  wod:longName "Armenia"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "3"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "4"^^xsd:int .
+
+wod:COL a wod:Country;
+  rdfs:label "Colombia"@en;
+  wod:longName "Colombia"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "3"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "4"^^xsd:int .
+
+wod:PRK a wod:Country;
+  rdfs:label "DPR Korea"@en;
+  wod:longName "Democratic People's Republic of Korea"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "2"^^xsd:int;
+  wod:numberBronzeMedals "4"^^xsd:int;
+  wod:numberMedals "6"^^xsd:int .
+
+wod:KGZ a wod:Country;
+  rdfs:label "Kyrgyzstan"@en;
+  wod:longName "Kyrgyzstan"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "2"^^xsd:int;
+  wod:numberBronzeMedals "4"^^xsd:int;
+  wod:numberMedals "6"^^xsd:int .
+
+wod:LTU a wod:Country;
+  rdfs:label "Lithuania"@en;
+  wod:longName "Lithuania"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "2"^^xsd:int;
+  wod:numberBronzeMedals "2"^^xsd:int;
+  wod:numberMedals "4"^^xsd:int .
+
+wod:IND a wod:Country;
+  rdfs:label "India"@en;
+  wod:longName "India"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "5"^^xsd:int;
+  wod:numberMedals "6"^^xsd:int .
+
+wod:MDA a wod:Country;
+  rdfs:label "Republic of Moldova"@en;
+  wod:longName "Republic of Moldova"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "3"^^xsd:int;
+  wod:numberMedals "4"^^xsd:int .
+
+wod:KOS a wod:Country;
+  rdfs:label "Kosovo"@en;
+  wod:longName "Kosovo"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "2"^^xsd:int .
+
+wod:CYP a wod:Country;
+  rdfs:label "Cyprus"@en;
+  wod:longName "Cyprus"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "0"^^xsd:int;
+  wod:numberMedals "1"^^xsd:int .
+
+wod:FIJ a wod:Country;
+  rdfs:label "Fiji"@en;
+  wod:longName "Fiji"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "0"^^xsd:int;
+  wod:numberMedals "1"^^xsd:int .
+
+wod:JOR a wod:Country;
+  rdfs:label "Jordan"@en;
+  wod:longName "Jordan"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "0"^^xsd:int;
+  wod:numberMedals "1"^^xsd:int .
+
+wod:MGL a wod:Country;
+  rdfs:label "Mongolia"@en;
+  wod:longName "Mongolia"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "0"^^xsd:int;
+  wod:numberMedals "1"^^xsd:int .
+
+wod:PAN a wod:Country;
+  rdfs:label "Panama"@en;
+  wod:longName "Panama"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "1"^^xsd:int;
+  wod:numberBronzeMedals "0"^^xsd:int;
+  wod:numberMedals "1"^^xsd:int .
+
+wod:TJK a wod:Country;
+  rdfs:label "Tajikistan"@en;
+  wod:longName "Tajikistan"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "3"^^xsd:int;
+  wod:numberMedals "3"^^xsd:int .
+
+wod:ALB a wod:Country;
+  rdfs:label "Albania"@en;
+  wod:longName "Albania"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "2"^^xsd:int;
+  wod:numberMedals "2"^^xsd:int .
+
+wod:GRN a wod:Country;
+  rdfs:label "Grenada"@en;
+  wod:longName "Grenada"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "2"^^xsd:int;
+  wod:numberMedals "2"^^xsd:int .
+
+wod:MAS a wod:Country;
+  rdfs:label "Malaysia"@en;
+  wod:longName "Malaysia"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "2"^^xsd:int;
+  wod:numberMedals "2"^^xsd:int .
+
+wod:PUR a wod:Country;
+  rdfs:label "Puerto Rico"@en;
+  wod:longName "Puerto Rico"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "2"^^xsd:int;
+  wod:numberMedals "2"^^xsd:int .
+
+wod:CPV a wod:Country;
+  rdfs:label "Cabo Verde"@en;
+  wod:longName "Cabo Verde"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "1"^^xsd:int .
+
+wod:CIV a wod:Country;
+  rdfs:label "Côte d'Ivoire"@en;
+  wod:longName "Côte d'Ivoire"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "1"^^xsd:int .
+
+wod:EOR a wod:Country;
+  rdfs:label "EOR"@en;
+  wod:longName "Refugee Olympic Team"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "1"^^xsd:int .
+
+wod:PER a wod:Country;
+  rdfs:label "Peru"@en;
+  wod:longName "Peru"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "1"^^xsd:int .
+
+wod:QAT a wod:Country;
+  rdfs:label "Qatar"@en;
+  wod:longName "Qatar"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "1"^^xsd:int .
+
+wod:SGP a wod:Country;
+  rdfs:label "Singapore"@en;
+  wod:longName "Singapore"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "1"^^xsd:int .
+
+wod:SVK a wod:Country;
+  rdfs:label "Slovakia"@en;
+  wod:longName "Slovakia"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "1"^^xsd:int .
+
+wod:ZAM a wod:Country;
+  rdfs:label "Zambia"@en;
+  wod:longName "Zambia"@en;
+  wod:numberGoldMedals "0"^^xsd:int;
+  wod:numberSilverMedals "0"^^xsd:int;
+  wod:numberBronzeMedals "1"^^xsd:int;
+  wod:numberMedals "1"^^xsd:int .
